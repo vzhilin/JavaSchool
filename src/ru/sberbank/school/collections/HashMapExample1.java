@@ -18,6 +18,10 @@ public class HashMapExample1 {
         System.out.println(persons);
 
         System.out.println(persons.get(3));
+
+        for (Map.Entry<Integer, Person> entry : persons.entrySet()) {
+            System.out.println(entry);
+        }
     }
 
 }
