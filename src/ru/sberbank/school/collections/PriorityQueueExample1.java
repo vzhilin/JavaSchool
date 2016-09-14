@@ -1,4 +1,4 @@
-package ru.sberbank.school;
+package ru.sberbank.school.collections;
 
 import java.util.Comparator;
 import java.util.PriorityQueue;

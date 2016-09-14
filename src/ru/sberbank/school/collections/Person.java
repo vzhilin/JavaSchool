@@ -1,6 +1,6 @@
-package ru.sberbank.school;
+package ru.sberbank.school.collections;
 
-public final class Person implements Comparable<Person> {
+public class Person implements Comparable<Person> {
 
     private final int id;
 
@@ -56,6 +56,7 @@ public final class Person implements Comparable<Person> {
     @Override
     public int hashCode() {
         return id;
+        // return phoneNumber.hashCode();
     }
 
     @Override

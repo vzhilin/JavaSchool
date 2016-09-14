@@ -1,9 +1,9 @@
-package ru.sberbank.school;
+package ru.sberbank.school.collections;
 
 import java.util.LinkedList;
 import java.util.List;
 
-public class LinkedListExample4 {
+public class IteratorExample2 {
 
     public static void main(String[] args) {
         List<Person> persons = new LinkedList<>();

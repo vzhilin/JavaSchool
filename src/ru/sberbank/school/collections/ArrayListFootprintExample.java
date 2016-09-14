@@ -1,12 +1,12 @@
-package ru.sberbank.school;
+package ru.sberbank.school.collections;
 
 import java.io.Console;
 import java.io.IOException;
-import java.util.LinkedList;
+import java.util.ArrayList;
 
-public class LinkedListFootprintExample {
+public class ArrayListFootprintExample {
 
-    private LinkedList<Object> list;
+    private ArrayList<Object> list;
 
     private void test() {
         Console console = System.console();
@@ -19,17 +19,21 @@ public class LinkedListFootprintExample {
         for (int i = 0; i < 15; i++) list.add(null);
         console.readLine();
 
+        list.trimToSize();
+        console.readLine();
+
         for (int i = 0; i < 1000; i++) list.add(null);
         console.readLine();
     }
 
-    LinkedListFootprintExample(LinkedList<Object> list) {
+    ArrayListFootprintExample(ArrayList<Object> list) {
         this.list = list;
     }
 
     public static void main(String[] args) throws IOException {
-        LinkedListFootprintExample example =  new LinkedListFootprintExample(new LinkedList<>());
+        ArrayListFootprintExample example =  new ArrayListFootprintExample(new ArrayList<>());
         example.test();
+
     }
 
 }

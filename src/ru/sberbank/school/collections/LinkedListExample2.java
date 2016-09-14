@@ -1,9 +1,10 @@
-package ru.sberbank.school;
+package ru.sberbank.school.collections;
 
+import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
 
-public class LinkedListExample6 {
+public class LinkedListExample2 {
 
     public static void main(String[] args) {
         Person ivanov = new Person(1, "Ivanov", "111");
@@ -11,9 +12,7 @@ public class LinkedListExample6 {
         Person sidorov = new Person(3, "Sidorov", "333");
 
         List<Person> persons = new LinkedList<>();
-        persons.add(ivanov);
-        persons.add(petrov);
-        persons.add(sidorov);
+        Collections.addAll(persons, ivanov, petrov, sidorov);
 
         System.out.println(persons.contains(ivanov));
         System.out.println(persons.contains(new Person(1, "Ivanov", "111")));
